@@ -8,5 +8,8 @@ int main(void) {
 	swap(&a, &b);
 	printf("(swapped) a=%d, b=%d\n", a, b);
 
+	printf("(added) a + b = %d + %d = %d\n", a, b, add(a, b));
+	printf("(subtracted) a - b = %d - %d = %d\n", a, b, subtract(a, b));
+
 	return 0;
 }
