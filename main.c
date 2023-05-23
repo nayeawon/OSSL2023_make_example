@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "mylib.h"
 
-int main(void) {
-	int a = 3, b = 5;
+int main(int argc, char *argv[]) {
+	int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
 	printf("(initial) a=%d, b=%d\n", a, b);
 
 	swap(&a, &b);
